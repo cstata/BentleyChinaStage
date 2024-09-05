@@ -1,0 +1,31 @@
+{
+  "name": "jest-js-browserstack",
+  "version": "1.0.0",
+  "author": "BrowserStack",
+  "license": "MIT",
+  "description": "BrowserStack Tests for BentleyChina STAGE",
+  "keywords": [
+    "browserstack",
+    "selenium",
+    "automate",
+    "examples",
+    "jest",
+    "jestjs"
+  ],
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "browserstack-node-sdk": "1.34.14",
+    "jest": "^27.4.7"
+  },
+  "dependencies": {
+    "browserstack-local": "^1.4.8",
+    "dotenv": "^16.0.0",
+    "selenium-webdriver": "4.1.2"
+  },
+  "scripts": {
+    "sample-test": "browserstack-node-sdk jest src/sample.test.js",
+    "sample-test1": "browserstack-node-sdk jest src/sample.test_backup.js",
+    "sample-local-test": "browserstack-node-sdk jest src/sample-local.test.js",
+    "postinstall": "npm update browserstack-node-sdk"
+  }
+}
